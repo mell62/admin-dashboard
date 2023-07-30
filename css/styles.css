@@ -18,7 +18,7 @@ body{
 .main{
     border: 5px solid orange;
     display: grid;
-    grid-template: 1fr / 2fr 1fr;
+    grid-template: 1fr 8fr / 2fr 1fr;
 }
 
 .header1{
@@ -29,3 +29,14 @@ body{
     border: 1px solid purple;
 }
 
+.projects{
+    display: grid;
+    grid-template: 1fr / repeat(auto-fit, minmax(350px,1fr));
+    gap: 1rem 1rem;
+    padding: 0 1.5vw 2vh 1.5vw;
+    grid-auto-rows: 1fr;
+}
+
+.card{
+    border: 1px solid orange;
+}
