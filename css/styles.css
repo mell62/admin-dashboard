@@ -40,3 +40,9 @@ body{
 .card{
     border: 1px solid orange;
 }
+
+.side-cards{
+    display: grid;
+    grid-template-rows: 4fr 1fr 4fr;
+    padding: 0 1.5vw 2vh 1.5vw;
+}
