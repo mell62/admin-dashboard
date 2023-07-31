@@ -63,6 +63,7 @@ body{
     justify-content: center;
     gap: 1vw;
     padding: calc(0.1vh + 0.1vw + 0.5rem);
+    cursor: pointer;
 }
 
 .sidebar-heading img{
@@ -95,4 +96,29 @@ body{
 .sidebar-links img{
     width: calc(0.5vw + 1rem);
     height: auto;
+}
+
+.home,
+.profile,
+.messages,
+.history,
+.tasks,
+.communities,
+.settings,
+.support,
+.privacy{        
+    cursor: pointer;
+    transition: filter 0.2s ease-out;
+}
+
+.home:hover,
+.profile:hover,
+.messages:hover,
+.history:hover,
+.tasks:hover,
+.communities:hover,
+.settings:hover,
+.support:hover,
+.privacy:hover{
+    filter: drop-shadow(2px 2px 1px #44236d);
 }
