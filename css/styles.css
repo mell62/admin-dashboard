@@ -158,3 +158,25 @@ body{
     gap: 1vw;
     align-items: center;
 }
+
+.header2{
+    display: grid;
+    grid-template-columns: 1fr 4fr 3fr;
+    align-items: center;
+    justify-items: center;
+    font-size: calc(0.5vw + 0.5rem);
+    font-weight: bold;
+}
+
+.header2 img{
+    width: calc(2vw + 3rem);
+    height: auto;
+}
+
+.header2 .header2-child{
+    justify-self: start;
+}
+
+.header2 .username{
+    font-size: calc(1.3vw + 0.3rem);
+}
