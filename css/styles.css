@@ -1,5 +1,8 @@
 :root{
     --primary-color: #994ff3;
+    --heading-size: calc(0.8vw + 0.8rem);
+    --secondary-heading-size: calc(0.4vw + 0.8rem);
+    --text-size: calc(0.3vw + 0.7rem);
     font-family: "Karla", sans-serif;
 }
 
@@ -14,7 +17,7 @@ body{
     display: grid;
     grid-template-rows: auto auto 1fr;
     background-color: var(--primary-color);
-    font-size: calc(1.3vw + 0.3rem);
+    font-size: var(--heading-size);
     font-weight: bold;
     color: white;
 }
@@ -85,7 +88,7 @@ body{
 
 .sidebar-links{
     font-weight: bold;
-    font-size: calc(0.5vw + 0.5rem);
+    font-size: var(--text-size);
     display: flex;
     justify-content: start;
     align-items: center;
@@ -130,7 +133,7 @@ body{
     grid-template-columns: 0.5fr 4fr 3fr;
     align-items: center;
     justify-items: center;
-    font-size: calc(0.5vw + 0.5rem);
+    font-size: var(--text-size);
     font-weight: bold;
     padding-top: calc(0.1vw + 0.6rem);
     padding-bottom: calc(0.1vw + 0.6rem);
@@ -148,7 +151,7 @@ body{
     border: 2px solid var(--primary-color);
     justify-self: stretch;
     background-color: #dfcdf5;
-    font-size: calc(0.5vw + 0.3rem);
+    font-size: calc(0.3vw + 0.5rem);
     padding: calc(0.1vw + 0.2rem);
 }
 
@@ -180,7 +183,7 @@ body{
     grid-template-columns: 1fr 4fr 3fr;
     align-items: center;
     justify-items: center;
-    font-size: calc(0.5vw + 0.5rem);
+    font-size: var(--text-size);
     font-weight: bold;
     padding-bottom: calc(0.1vw + 0.6rem);
 }
@@ -195,7 +198,7 @@ body{
 }
 
 .header2 .username{
-    font-size: calc(1.3vw + 0.3rem);
+    font-size: var(--heading-size);
 }
 
 .header2 .header2-buttons{
@@ -212,7 +215,7 @@ body{
     background-color: var(--primary-color);
     color: white;
     font-weight: bold;
-    font-size: calc(0.5vw + 0.5rem);
+    font-size: var(--text-size);
     padding: calc(0.1vw + 0.5rem);
     width: calc(3vw + 3rem);
     cursor: pointer;
@@ -224,13 +227,13 @@ body{
     padding-left: 1.5vw;
     padding-bottom: 1vh;
     align-self: end;
-    font-size: calc(0.8vw + 0.6rem);
+    font-size: var(--secondary-heading-size);
     padding-top: calc(0.3vw + 0.7rem);
     padding-bottom: calc(0.1vw + 0.6rem);
 }
 
 .card .card-heading{
-    font-size: calc(0.8vw + 0.6rem);
+    font-size: var(--secondary-heading-size);
     font-weight: bold;
 }
 
@@ -241,7 +244,7 @@ body{
 }
 
 .card img.planet-pic{
-    width: calc(2vw + 3rem);
+    width: calc(3vw + 2rem);
     height: auto;
 }
 
@@ -249,7 +252,7 @@ body{
     display: flex;
     align-items: center;
     gap: 1rem;
-    font-size: calc(0.4vw + 0.5rem);
+    font-size: var(--text-size);
 }
 
 .card .card-logos{
