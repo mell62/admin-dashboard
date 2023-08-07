@@ -137,8 +137,6 @@ body{
     font-weight: bold;
     padding-top: calc(0.1vw + 0.6rem);
     padding-bottom: calc(0.1vw + 0.6rem);
-    
-    
 }
 
 .header1 .search-logo{
@@ -170,6 +168,13 @@ body{
     cursor: pointer;
 }
 
+.header1 .username:hover,
+.header2 .username:hover{
+    color: var(--primary-color);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 .header1 .header1-child{
     display: flex;
     width: 100%;
@@ -191,6 +196,7 @@ body{
 .header2 img{
     width: calc(3vw + 2rem);
     height: auto;
+    cursor: pointer;
 }
 
 .header2 .header2-child{
