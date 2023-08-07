@@ -247,6 +247,11 @@ body{
     width: calc(0.5vw + 1rem);
     height: auto;
     cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.card img:not(.planet-pic):hover{
+    transform: scale(1.1);
 }
 
 .card img.planet-pic{
