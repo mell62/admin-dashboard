@@ -33,14 +33,19 @@ body{
 
 .projects{
     display: grid;
-    grid-template: 1fr / repeat(auto-fit, minmax(350px,1fr));
+    grid-template: 1fr / repeat(auto-fit, minmax(300px,1fr));
     gap: 1rem 1rem;
     padding: 0 1.5vw 2vh 1.5vw;
     grid-auto-rows: 1fr;
 }
 
 .card{
-    border: 1px solid orange;
+    background-color: white;
+    padding: calc(0.5vw + 1rem);
+    border-radius: 1rem;
+    box-shadow: 1px 1px 2px gray;
+    display: grid;
+    grid-template-rows: 0.5fr 3fr 1fr;
 }
 
 .side-cards{
@@ -210,4 +215,35 @@ body{
     padding-bottom: 1vh;
     align-self: end;
     font-size: calc(0.8vw + 0.6rem);
+}
+
+.card .card-heading{
+    font-size: calc(0.8vw + 0.6rem);
+    font-weight: bold;
+}
+
+.card img:not(.planet-pic){
+    width: calc(0.5vw + 1rem);
+    height: auto;
+    cursor: pointer;
+}
+
+.card img.planet-pic{
+    width: calc(2vw + 3rem);
+    height: auto;
+}
+
+.card .card-text{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: calc(0.4vw + 0.5rem);
+}
+
+.card .card-logos{
+    align-self: end;
+    justify-self: end;
+    display: flex;
+    width: 50%;
+    justify-content: space-evenly;
 }
