@@ -272,6 +272,7 @@ body{
     align-items: center;
     gap: 1rem;
     font-size: var(--text-size);
+    color: var(--text-color);
 }
 
 .card .card-logos{
