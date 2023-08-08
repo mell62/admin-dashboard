@@ -1,6 +1,6 @@
 # Admin dashboard
 
-A complete dashboard design, built purely from vanilla HTML and CSS, utilizing the power of CSS Grid.
+A complete dashboard webpage, built purely from vanilla HTML and CSS, utilizing the power of CSS Grid.
 
 **Check it out :point_right:[here](https://mell62.github.io/admin-dashboard):point_left:!**
 
