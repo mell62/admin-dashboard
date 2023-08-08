@@ -4,7 +4,7 @@
     --heading-size: calc(0.8vw + 0.8rem);
     --secondary-heading-size: calc(0.4vw + 0.8rem);
     --text-size: calc(0.3vw + 0.7rem);
-    font-family: "Karla", sans-serif;
+    font-family:  "Karla", "Arial Narrow", "Raleway", "Franklin Gothic Medium", sans-serif, system-ui;
 }
 
 body{
