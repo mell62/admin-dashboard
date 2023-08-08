@@ -276,7 +276,7 @@ body{
 
 .card .card-text{
     display: flex;
-    align-items: center;
+    align-items: start;
     gap: 1rem;
     font-size: var(--text-size);
     color: var(--text-color);
