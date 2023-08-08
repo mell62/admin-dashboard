@@ -249,6 +249,7 @@ body{
 .card .card-heading{
     font-size: var(--secondary-heading-size);
     font-weight: bold;
+    cursor: pointer;
 }
 
 .card .card-logos img{
