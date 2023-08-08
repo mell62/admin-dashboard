@@ -30,7 +30,7 @@ body{
 
 .main{
     display: grid;
-    grid-template: auto 10fr / 3fr 1fr;
+    grid-template: auto auto 1fr / 3fr 1fr;
     background-color: #ece5f5;
     box-shadow: 0 1px 6px inset gray;
 }
