@@ -38,7 +38,7 @@ body{
 .projects{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(330px,1fr));
-    gap: 1rem 1rem;
+    gap: 2rem 1rem;
     padding: 0 1.5vw 2vh 1.5vw;
     grid-auto-rows: 1fr;
 }
