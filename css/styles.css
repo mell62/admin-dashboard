@@ -362,6 +362,7 @@ body{
 
 .trending-username{
     font-weight: bold;
+    width: min-content;
 }
 
 .trending-username:hover, .trending-username a:hover{
