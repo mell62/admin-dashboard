@@ -228,6 +228,12 @@ body{
     cursor: pointer;
 }
 
+.new-btn:hover,
+.upload-btn:hover,
+.share-btn:hover{
+    background-color: #a566f1;
+}
+
 .projects-heading,
 .announcements-heading{
     font-weight: bold;
