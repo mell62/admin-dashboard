@@ -10,7 +10,7 @@ A complete dashboard design, built purely from vanilla HTML and CSS, utilizing t
 
 - **CSS Grid** is majorly used to implement the layout
 - CSS Flexbox is paired with Grid to achieve easier control of the layout
-- Fairly responsive in all screen sizes, including mobile devices
+- Responsive in all screen sizes, including mobile devices
 
 ## :page_with_curl: Note
 
