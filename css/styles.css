@@ -1,5 +1,6 @@
 :root{
     --primary-color: #994ff3;
+    --text-color: rgb(100,100,100);
     --heading-size: calc(0.8vw + 0.8rem);
     --secondary-heading-size: calc(0.4vw + 0.8rem);
     --text-size: calc(0.3vw + 0.7rem);
@@ -44,7 +45,7 @@ body{
 
 .card{
     background-color: white;
-    padding: calc(0.5vw + 1rem);
+    padding: calc(0.4vw + 0.9rem);
     border-radius: 1rem;
     box-shadow: 1px 1px 2px gray;
     display: grid;
@@ -53,7 +54,7 @@ body{
 
 .side-cards{
     display: grid;
-    grid-template-rows: 3fr 1fr 3fr;
+    grid-template-rows: auto auto auto 1fr;
     padding: 0 1.5vw 2vh 1.5vw;
 }
 
@@ -160,7 +161,7 @@ body{
 }
 
 .header1 .astro-pic{
-    width: calc(1.5vw + 1.5rem);
+    width: calc(1.5vw + 1.2rem);
     height: auto;
 }
 
@@ -231,7 +232,14 @@ body{
 .announcements-heading{
     font-weight: bold;
     padding-left: 1.5vw;
-    padding-bottom: 1vh;
+    align-self: end;
+    font-size: var(--secondary-heading-size);
+    padding-top: calc(0.3vw + 0.7rem);
+    padding-bottom: calc(0.1vw + 0.6rem);
+}
+
+.trending-heading{
+    font-weight: bold;
     align-self: end;
     font-size: var(--secondary-heading-size);
     padding-top: calc(0.3vw + 0.7rem);
@@ -243,14 +251,14 @@ body{
     font-weight: bold;
 }
 
-.card img:not(.planet-pic){
+.card .card-logos img{
     width: calc(0.5vw + 1rem);
     height: auto;
     cursor: pointer;
     transition: transform 0.2s ease;
 }
 
-.card img:not(.planet-pic):hover{
+.card .card-logos img:hover{
     transform: scale(1.1);
 }
 
@@ -277,3 +285,85 @@ body{
 .card:not(.announcement-card, .trending-card){
     box-shadow: 1px 1px 2px gray, 0 4px inset var(--primary-color);
 }
+
+.announcement-card{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: 0;
+}
+
+.announcement{
+    padding: calc(0.4vw + 0.9rem);
+    cursor: pointer;
+}
+
+.announcement:hover{
+    background-color: lightgray;
+}
+
+.announcement-1{                        /*So hovering will not result in a rectangular lightgray background*/
+    border-radius: 1rem 1rem 0 0;
+}
+
+.announcement-3{
+    border-radius: 0 0 1rem 1rem;
+}
+
+.announcement:not(.announcement-3){
+    border-bottom: 0.1rem solid lightgray;
+}
+
+.announcement-heading{
+    font-size: var(--text-size);
+    font-weight: bold;
+}
+
+.announcement-text{
+    font-size: var(--text-size);
+    color: var(--text-color);
+}
+
+.trending-card{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: calc(0.5vw + 1rem);
+}
+
+.trending img{
+    width: calc(1.5vw + 1.2rem);
+    height: auto;
+    cursor: pointer;
+}
+
+.trending{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: var(--text-size);
+}
+
+.trending-username a{
+    text-decoration: none;
+    color: black;
+}
+
+.trending-text a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.trending-username{
+    font-weight: bold;
+}
+
+.trending-username:hover, .trending-username a:hover{
+    color: var(--primary-color);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.trending-text{
+    color: var(--text-color);
+    cursor: pointer;
+}
+
